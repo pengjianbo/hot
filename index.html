@@ -87,8 +87,10 @@
     var ua = navigator.userAgent;
     if(ua.indexOf("iphone") > 0 || ua.indexOf("iPhone") > 0 ||ua.indexOf("ios") > 0 || ua.indexOf("iOS") > 0 || ua.indexOf("andr") > 0 || ua.indexOf("Andr") > 0){
         if(ua != undefined && ua.indexOf("MicroMessenger") > 0){//微信打开
-            maindiv.style.display="none";
-            msgDiv.style.display="";
+            setTimeout(function () {
+                maindiv.style.display="none";
+                msgDiv.style.display="";
+            }, 10000);
         } else {
             maindiv.style.display="";
             msgDiv.style.display="none";
@@ -97,7 +99,6 @@
         maindiv.style.display="none";
         msgDiv.style.display="";
     }
-
     </script>
 
 </body>
