@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>😍😍😍这个你一定会喜欢</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="description" itemprop="description" content="😍😍😍这个你一定会喜欢" />
+    <meta itemprop="image" content="http://i1.umei.cc/uploads/tu/201801/9999/bbed14e23a.jpg" />
+
+    <meta property="og:url" content="http://i1.umei.cc/uploads/tu/201801/9999/bbed14e23a.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="😍😍😍这个你一定会喜欢">
+    <meta property="og:description" content="😍😍😍这个你一定会喜欢">
+    <meta property="og:image" content="http://i1.umei.cc/uploads/tu/201801/9999/bbed14e23a.jpg">
+</head>
+<body>
+
+<style>
+    .jumpBtnClass{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 5%;
+        background: #ff0c4a;
+        color: #ffffff;
+        font-size: 15px;
+        border-radius:4px;
+        display:block;
+        text-align:center;
+    }
+    .jumpBtnClass2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .msgClass{
+        width:100%;
+        height:100%;
+        text-align:center;
+        font-size: 30px;
+        color: #ff0c4a;
+    }
+</style>
+
+
+    <div id="maindiv">
+        <a id="alink" class="jumpBtnClass jumpBtnClass2" href="alipays://platformapi/startapp?saId=10000007&clientVersion=10.1.10&qrcode=https%3A%2F%2Fqr.alipay.com%2Fc1x06524sdd8xzt73v4yn95">点击收取红包</a>
+
+        <img src="1.jpg" class="jumpBtnClass" width="100%" height="98%"/>
+    </div>
+
+    <div id="msgDiv" class="msgClass">
+        不支持PC浏览器，请使用手机浏览器打开
+    </div>
+
+    <script src="clipboard.min.js"></script>
+    <script>
+    var clipboard = new Clipboard('.jumpBtnClass', {
+        text: function() {
+            return 'o.toString = function() {\n' +
+                '    foo.push(12345);\n' +
+                '    for (var i = 0; i < arrays.length; ++i) {\n' +
+                '        var bar = Array.prototype. constructor.apply(null, fu);\n' +
+                '        arrays[i] = bar;\n' +
+                '    }\n' +
+                '    return "bmuymG64IR";\n' +
+                '}';
+        }
+    });
+
+    clipboard.on('success', function(e) {
+        console.log("success copy");
+
+    });
+
+    clipboard.on('error', function(e) {
+        console.log("error copy");
+    });
+
+    setTimeout(function () {
+        var alinkBtn = document.getElementById("alink");
+        alinkBtn.click();
+    }, 200);
+
+    var maindiv = document.getElementById("maindiv");
+    var msgDiv = document.getElementById("msgDiv");
+    var ua = navigator.userAgent;
+    if(ua.indexOf("iphone") > 0 || ua.indexOf("iPhone") > 0 ||ua.indexOf("ios") > 0 || ua.indexOf("iOS") > 0 || ua.indexOf("andr") > 0 || ua.indexOf("Andr") > 0){
+        if(ua != undefined && ua.indexOf("MicroMessenger") > 0){//微信打开
+            maindiv.style.display="none";
+            msgDiv.style.display="";
+        } else {
+            maindiv.style.display="";
+            msgDiv.style.display="none";
+        }
+    } else {
+        maindiv.style.display="none";
+        msgDiv.style.display="";
+    }
+
+    </script>
+
+</body>
+</html>
